@@ -11,8 +11,8 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     top: "0px",
     left: '0px',
-    width: '60px',
-    height: '60px',
+    width: '80px',
+    height: '80px',
     
   },
 }));
@@ -32,11 +32,8 @@ export default function Rcapp(props){
    
     return(
         <div>
-          <Avatar src={props.logo} className={classes.root}></Avatar>
-            <Button
-        aria-describedby={id}
-        color="white"
-        onClick={handleClick}>xxx
+          <a href={props.link}><img src={props.logo} className={classes.root}></img></a>
+            <Button fullWidth="true" aria-describedby={id}  onClick={handleClick}>xxx
       </Button>
       <Popover
         id ={open}
@@ -52,7 +49,7 @@ export default function Rcapp(props){
           horizontal: "center"
         }}
       >
-        <Typography><a href="http://www.hackingwithreact.com/read/1/23/creating-a-link-between-pages-in-react-router">Click here!</a></Typography>
+<Typography>{props.content}</Typography>
       </Popover>
         </div>
     )
