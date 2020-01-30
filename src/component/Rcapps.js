@@ -5,9 +5,15 @@ import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import { makeStyles } from '@material-ui/core/styles';
 import Rclogo from "./Logo.png"
+import Avatar from '@material-ui/core/Avatar';
 import { Divider, List } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
 import ListItem from '@material-ui/core/ListItem';
+import Sean from './seanchok.jpg'
+import Utkarsh from "./utkarsh.jpg"
+import Welvin from "./welvin.png"
+import Siddhant from "./siddhant.jpg"
+import Gela from './gela.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,26 +24,24 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+const useStyles1 = makeStyles(theme => ({
+  root: {
+    width: "250px",
+    height:"250px",
+  }
+}));
+
 export default function Menu(){
   const classes = useStyles()
+  const classes1 = useStyles1()
     return(
         <div className={classes.root} >
           <h2 style={{textAlign:'center',color:'white'}}>our apps</h2>
           <Tabs variant="scrollable" indicatorColor="secondary"
           scrollButtons="auto">
-          <Rcapp logo={Rclogo} link="http://www.hackingwithreact.com/read/1/23/creating-a-link-between-pages-in-react-router" content="hello! this is smart washine machine"/>
+          <Rcapp logo={Rclogo} name="smart laundry machine" link="https://sls.rctech.club/" content="hello! this is smart washine machine"/>
           <Tab></Tab>
-          <Rcapp logo={Rclogo} link="http://www.hackingwithreact.com/read/1/23/creating-a-link-between-pages-in-react-router" content="hello! this is "/>
-          <Tab></Tab>
-          <Rcapp logo={Rclogo} link="http://www.hackingwithreact.com/read/1/23/creating-a-link-between-pages-in-react-router" content="hello! this is "/>
-          <Tab></Tab>
-          <Rcapp logo={Rclogo} link="http://www.hackingwithreact.com/read/1/23/creating-a-link-between-pages-in-react-router" content="hello! this is "/>
-          <Tab></Tab>
-          <Rcapp logo={Rclogo} link="http://www.hackingwithreact.com/read/1/23/creating-a-link-between-pages-in-react-router" content="hello! this is "/>
-          <Tab></Tab>
-          <Rcapp logo={Rclogo} link="http://www.hackingwithreact.com/read/1/23/creating-a-link-between-pages-in-react-router" content="hello! this is "/>
-          <Tab></Tab>
-          <Rcapp logo={Rclogo} link="http://www.hackingwithreact.com/read/1/23/creating-a-link-between-pages-in-react-router" content="hello! this is "/>
+          <Rcapp logo={Rclogo} name="xxx" link="https://sls.rctech.club/" content="hello! this is smart washine machine"/>
           <Tab></Tab>
             </Tabs>
             <Divider variant='middle'/>
@@ -50,20 +54,24 @@ export default function Menu(){
         justifyContent="space-around"
       >
     <Box  flexShrink={1} >
-          <img src={Rclogo}  width="250px"></img>
-          <p>this is ...</p>
+          <Avatar src={Utkarsh} size="large" className={classes1.root}/>
+          <p style={{textAlign:"center"}}>this is ...</p>
         </Box>
         <Box flexShrink={1} >
-          <img src={Rclogo}  width="250px"></img>
-          <p>this is ...</p>
+        <Avatar src={Sean} size="large" className={classes1.root}/>
+          <p style={{textAlign:"center"}}>this is ...</p>
         </Box>
         <Box flexShrink={1} >
-          <img src={Rclogo}  width="250px"></img>
-          <p>this is ...</p>
+        <Avatar src={Gela} size="large" className={classes1.root}/>
+          <p style={{textAlign:"center"}}>this is ...</p>
         </Box>
         <Box flexShrink={1} >
-          <img src={Rclogo}  width="250px"></img>
-          <p>this is ...</p>
+        <Avatar src={Siddhant} size="large" className={classes1.root}/>
+          <p style={{textAlign:"center"}}>this is ...</p>
+        </Box>
+        <Box flexShrink={1} >
+        <Avatar src={Welvin} size="large" className={classes1.root}/>
+          <p style={{textAlign:"center"}}>this is ...</p>
         </Box>
       </Box>
       </Container>

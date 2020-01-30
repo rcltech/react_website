@@ -9,11 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
-    top: "0px",
-    left: '0px',
-    width: '80px',
-    height: '80px',
-    
+    height:'150px',display:'block',marginLeft:'auto',marginRight:'auto'
   },
 }));
 
@@ -31,9 +27,9 @@ export default function Rcapp(props){
     const id = 1
    
     return(
-        <div>
+        <div >
           <a href={props.link}><img src={props.logo} className={classes.root}></img></a>
-            <Button fullWidth="true" aria-describedby={id}  onClick={handleClick}>xxx
+            <Button fullWidth="true" aria-describedby={id}  onClick={handleClick} >{props.name}
       </Button>
       <Popover
         id ={open}

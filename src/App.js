@@ -12,7 +12,7 @@ function App() {
           style={{
             backgroundColor: "#25727F",
             width: '100%',
-            height: "1000px",
+            height: "2000px",
           }}
         >
           <div>
