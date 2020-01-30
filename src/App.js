@@ -1,7 +1,7 @@
 import React from 'react';
 import  Rcmems from "./component/Rcmems"
 import Rcapps from "./component/Rcapps"
-import Rclogo from "./component/Logo.png"
+import Logoname from "./component/logo.png"
 import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
 
@@ -16,14 +16,11 @@ function App() {
           }}
         >
           <div>
-          <img style={{height:'100px',display:'block',marginLeft:'auto',marginRight:'auto'}} src={Rclogo}/>
+          <img style={{height:'200px',display:'block',marginLeft:'auto',marginRight:'auto'}} src={Logoname}/>
           <Divider variant='middle'/>
           </div>
           <div>
           <Rcapps/>
-          </div>
-          <div>
-          <Rcmems/>
           </div>
         </div>
       );

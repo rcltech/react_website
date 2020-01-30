@@ -14,6 +14,7 @@ import Utkarsh from "./utkarsh.jpg"
 import Welvin from "./welvin.png"
 import Siddhant from "./siddhant.jpg"
 import Gela from './gela.jpg'
+import Event1 from "./jsposter.png" 
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -55,7 +56,7 @@ export default function Menu(){
       >
     <Box  flexShrink={1} >
           <Avatar src={Utkarsh} size="large" className={classes1.root}/>
-          <p style={{textAlign:"center"}}>this is ...</p>
+          <div style={{textAlign:"center"}}><p>this is ...</p></div>
         </Box>
         <Box flexShrink={1} >
         <Avatar src={Sean} size="large" className={classes1.root}/>
@@ -80,8 +81,8 @@ export default function Menu(){
     <div>
       <Box display="flex" justifyContent="space-around">
         <List>
-          <ListItem component="a" href="https://material-ui.com/zh/api/list-item/#import" divider="true"><font size="5" color="white">event1</font></ListItem>
-          <ListItem >subevent</ListItem>
+          <ListItem component="a" href="https://material-ui.com/zh/api/list-item/#import" divider="true"><font size="5" color="white">JS workshop</font></ListItem>
+          <ListItem ><img src={Event1} style={{height:"350px",width:"220px"}}></img></ListItem>
         </List>
         <List>
         <ListItem component="a" href="https://material-ui.com/zh/api/list-item/#import" divider="true"><font size="5" color="white">event2</font></ListItem>
